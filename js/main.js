@@ -42,11 +42,16 @@ buttons.forEach((button) => {
 
       let match = input.match(/(\d+\.?\d*)$/);
 
+      console.log(match);
+
       if (match) {
         let num = match[0];
         let percent = num / 100;
 
+        console.log(input.slice(0, -num.length) + percent);
         resultInput.textContent = input.slice(0, -num.length) + percent;
+      } else {
+        alert("cant do percentage to a operator");
       }
 
       return;
