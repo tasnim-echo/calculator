@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-block: 75px;
+  padding-left: 83px;
+  /* background-color: #cecece; */
+  height: 100vh;
+}
+.calculator-content {
+  border: 1px solid #cecece;
+  border-radius: 10px;
+  max-width: 600px;
+  height: auto;
+  padding: 60px 30px;
+}
+
+.button {
+  height: 60px;
+  border-radius: 5px;
+  background: #fdd7c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover {
+  transform: scale(1.03);
+}
+.number-button {
+  background: #efefef;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.button-del {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ac2a01;
+}
+.button-percent {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #ac2a01;
+}
+
+.button-c img {
+  width: 14px;
+  height: 17.5px;
+}
+.button-division img {
+  width: 18px;
+  height: 18px;
+}
+.button-mul img {
+  width: 14px;
+  height: 15px;
+}
+.button-add img {
+  width: 14px;
+  height: 14px;
+}
+.button-sub img {
+  width: 12px;
+  height: 3px;
+}
+.button-equal img {
+  width: 12px;
+  height: 9px;
+}
+
+.keyboard .button:last-child {
+  background: #f8935a;
+}
+.keyboard-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.button-zero {
+  grid-column: span 2;
+}
+.result-output {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: right;
+}
+.result-input {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 15px;
+  text-align: right;
+}
